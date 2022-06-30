@@ -174,11 +174,9 @@
     let getProperty = window.getComputedStyle(detect).getPropertyValue("display");
     if(!wrapper.classList.contains("show")){
       getProperty == "none" ? wrapper.classList.add("show") : wrapper.classList.remove("show");
-      document.getElementById("blorscreen").style.filter = "blur(8px)";
     }
     button.addEventListener("click", ()=>{
       wrapper.classList.remove("show");
-      document.getElementById("blorscreen").style.filter = "blur(0px)";
     });
 
     </script>
