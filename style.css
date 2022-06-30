@@ -41,7 +41,7 @@ ul{
   left: 50%;
   width: 100%;
   padding: 40px 30px;
-  background: #000;
+  background: #7f71ff;
   border-radius: 15px;
   opacity: 0;
   pointer-events: none;
@@ -53,6 +53,8 @@ ul{
 .snicker.show{
   opacity: 1;
   pointer-events: auto;
+  background: #7f71ff;
+  color: #fff;
   transform:translate(-50%, -50%) scale(1);
 }
 .snicker .content,
@@ -74,7 +76,7 @@ ul{
 .warn-icon .icon{
   height: 100px;
   width: 100px;
-  background: #fff;
+  background: #7f71ff;
   border-radius: inherit;
 }
 .warn-icon .icon i{
