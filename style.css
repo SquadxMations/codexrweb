@@ -71,7 +71,7 @@ ul{
   height: 115px;
   width: 115px;
   border-radius: 50%;
-  background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+  background: linear-gradient(#fff 0%, #9927cf 0%, #eee 100%, #ddd 100%);
 }
 .warn-icon .icon{
   height: 100px;
@@ -80,7 +80,7 @@ ul{
   border-radius: inherit;
 }
 .warn-icon .icon i{
-  background: linear-gradient(#9b27ca 0%, #9927cf 0%, #d33639 100%, #f92121 100%);
+  background: linear-gradient(#fff 0%, #9927cf 0%, #eee 100%, #ddd 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
