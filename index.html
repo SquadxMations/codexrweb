@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codexr | Be Artistic</title>
+    <!-- Meta Tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Meta Search Show -->
+    <meta name="title" content="Codexr - Learn Coding">
+    <meta name="description" content="Codexr is a Coding Blog for 'Codexr' Youtube Channel where we post HTML, CSS, JS, PHP codes.. Visit us for more Information...">
+    <!-- Css File Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="img/fav-icon.png">
+    <!-- Font Awesome Linking -->
+    <script src="https://kit.fontawesome.com/7f903154e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="blog">
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <!-- logo -->
+            <a href="index.html" class="logo">
+                <!-- <i class="fas fa-display"></i>--> Codexr 
+            </a>
+
+            <!-- Post Filter -->
+            <nav>
+                <!-- Menu Icon -->
+                <input type="checkbox" class="menu-btn" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+
+                <!-- Filter -->
+                <ul class="blog-filter">
+                    <li class="list blog-filter-active" data-filter="all">All</li>
+                    <li class="list" data-filter="latest">Latest</li>
+                    <li class="list" data-filter="old">Old</li>
+                    <li class="list" data-filter="special">Special</li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+        <!-- Ad -------------->
+        <div class="ad">
+            <a href="#">
+                <img src="img/ad-home.png" alt="ads">
+            </a>
+        </div>
+
+
+
+        <!-- Container ----------->
+        <div class="blog-container">
+
+            <!-- Box 1 ----------------------------------------------------------------------------------------------------------------------------->
+            <div class="blog-box latest">
+
+                <!-- img -->
+                <div class="blog-img">
+                    <a href="html/glowbtn.html">
+                        <img src="img/glowbtn.png" alt="img">
+                    </a>
+                    <span class="category">CSS</span>
+                </div>
+
+                <!-- text -->
+                <div class="blog-text">
+                    <a href="html/glowbtn.html">
+                        <strong>Create Easy Glow Buttons with HTML & CSS</strong>
+                    </a>
+
+                    <!-- Time & Category -->
+                    <div class="category-time">
+                        <span class="blog-category">Latest</span>
+                        <span class="published-time">29-06-2022</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-------------------------------------------------------- Other Boxes in box.txt ----------------------------------------------->
+
+
+        </div>
+
+
+
+        <!-- Ad ---------------->
+        <div class="ad">
+            <a href="#">
+                <img src="img/ad-home.png" alt="ads">
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Footer ------------------------------------------------------->
+    <footer>
+        <span class="copyright">Copyright 2022 - Codexr</span>
+        <!-- Social Links -->
+        <div class="footer-social">
+            <a href="https://www.youtube.com/channel/UCi7R157n3HDTPlPKWr8KzOQ"><i class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com/code.xr"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-telegram"></i></a>
+            <a href=""><i class="fab fa-discord"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- JQuery ----------->
+    <script src="js/jquery.js"></script>
+    <!-- Script ----------->
+    <script>
+
+        // Blog Filter Menu
+        $(document).on('click','.blog-filter li', function(){
+            $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
+        });
+
+        // Post-Filter
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.blog-box').show('1000');
+                }else{
+                    $('.blog-box').not('.'+value).hide('1000');
+                    $('.blog-box').filter('.'+value).show('1000');
+                }
+            });
+        });
+
+
+        // For Fix Filter Menu
+        $(window).scroll(function(){
+            if($(document).scrollTop() > 80){
+                $('nav').addClass('fix-nav');
+            }else{
+                $('nav').removeClass('fix-nav');
+            };
+        });
+
+    </script>
+
+</body>
+</html>

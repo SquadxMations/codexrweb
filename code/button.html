@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Glow Button Code | Codexr</title>
+    <link rel="stylesheet" href="../copy.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="text-boxes">
+        <div class="text-box HTMLBox">
+            <div class="topic">HTML Code:</div>
+            <textarea id="HTMLBox" autocomplete="off" readonly>
+<div class="wrapper">
+    <h4>Glow Buttons</h4>
+    <div class="glowbtn">
+        <button class="btn1">Click</button>
+        <button class="btn2">Click</button>
+        <button class="btn3">Click</button>
+    </div>
+</div>
+
+</textarea>
+<button id="HTMLButton">Copy Code</button>
+</div>
+
+
+        <div class="text-box CSSBox">
+            <div class="topic">CSS Code:</div>
+            <textarea id="CSSBox" autocomplete="off" readonly>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(66, 93, 117);
+}
+
+.wrapper{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper h4{
+    margin: 0 18px;
+    color: #fff;
+    text-shadow: 0px 0px 5px #b700ff;
+}
+
+.wrapper .glowbtn{
+    margin-left: -44px;
+    line-height: 3;
+}
+
+.wrapper .glowbtn button{
+    margin: 0 5px;
+    padding: 6px 14px;
+}
+
+.wrapper .glowbtn .btn1{
+    background: #0f001b;
+    color: #ffae00;
+    outline: none;
+    border: 2px solid #ffae00;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(255, 187, 0, 0.3);
+}
+
+.wrapper .glowbtn .btn2{
+    background: rgb(241, 234, 234);
+    color: rgb(0, 209, 199);
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.wrapper .glowbtn .btn3{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    outline: none;
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.wrapper .glowbtn .btn3:hover{
+    transform: scale(0.9);
+    border: 1px solid #000;
+    background: #fff;
+    color: rgb(146, 146, 146);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.1);
+}
+
+.wrapper .glowbtn .btn1:hover{
+    transform: scale(0.95);
+    background: #ffae00;
+    font-weight: 600;
+    color: #1e003b;
+}
+
+.wrapper .glowbtn .btn2:hover{
+    transform: scale(0.95);
+    color: #fff;
+    background: rgb(0, 209, 199);
+    box-shadow: 0px 0px 10px rgb(0, 209, 199);
+}
+            </textarea>
+            <button id="CSSButton">Copy Code</button>
+        </div>
+
+
+        <div class="text-box JSBox">
+            <div class="topic">Javascript Code:</div>
+            <textarea id="JSBox" autocomplete="off" readonly>
+Not Available!
+            </textarea>
+            <button id="JSButton">Copy Code</button>
+        </div>
+    </div>
+
+    <script>
+
+        //HTML Box
+        let HTMLBox = document.getElementById("HTMLBox");
+        let HTMLButton = document.getElementById("HTMLButton");
+
+        HTMLButton.onclick = function(){
+            HTMLBox.select();
+            document.execCommand("copy");
+            HTMLButton.innerHTML = "Code Copied";
+        }
+
+        //CSS Box
+        let CSSBox = document.getElementById("CSSBox");
+        let CSSButton = document.getElementById("CSSButton");
+
+        CSSButton.onclick = function(){
+            CSSBox.select();
+            document.execCommand("copy");
+            CSSButton.innerHTML = "Code Copied";
+        }
+
+        //Javascript Box
+        let JSBox = document.getElementById("JSBox");
+        let JSButton = document.getElementById("JSButton");
+
+        JSButton.onclick = function(){
+            JSBox.select();
+            document.execCommand("copy");
+            JSButton.innerHTML = "Code Copied";
+        }
+
+    </script>
+
+
+</body>
+</html>
