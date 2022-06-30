@@ -41,7 +41,7 @@ ul{
   left: 50%;
   width: 100%;
   padding: 40px 30px;
-  background: #fff;
+  background: #000;
   border-radius: 15px;
   opacity: 0;
   pointer-events: none;
@@ -87,11 +87,13 @@ ul{
 .content h2{
   margin-top: 35px;
   font-size: 32px;
+  color: #fff;
 }
 .content p{
   font-size: 19px;
   text-align: center;
   margin-top: 20px;
+  color: #fff;
 }
 .btn{
   height: 57px;
